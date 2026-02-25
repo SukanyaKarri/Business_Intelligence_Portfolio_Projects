@@ -8,6 +8,6 @@ Report Creation
 - Scripts : Python-
 - Data Manipulation: SQL,Pandas
 - Data Transformation: PowerQuery
-- Data Validation: Excel (pivots)
+- Data Validation: Excel (Pivots, Data Cleansing)
 - Data Sources: DataFlow, Azure,BigQuery,SnowFalke
 - Cloud-Platforms : AWS, Azure
