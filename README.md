@@ -9,5 +9,5 @@ Report Creation
 - Data Manipulation: SQL,Pandas
 - Data Transformation: PowerQuery
 - Data Validation: Excel (pivots)
-- Data Sources: DataFlow, Azure,BigQuery
+- Data Sources: DataFlow, Azure,BigQuery,SnowFalke
 - Cloud-Platforms : AWS, Azure
