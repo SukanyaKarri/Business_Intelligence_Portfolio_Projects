@@ -1,0 +1,36 @@
+=let
+    text = Text.Lower([Feedback])
+in
+    if Text.Contains(text, "not very helpful")
+        or Text.Contains(text, "was not helpful")
+        or Text.Contains(text, "unhelpful")
+        or Text.Contains(text, "rude")
+        or Text.Contains(text, "not happy")
+        or Text.Contains(text, "disappointing")
+        or Text.Contains(text, "frustrating")
+        or Text.Contains(text, "unclear") then 0.2
+
+    else if Text.Contains(text, "issue")
+        and ( Text.Contains(text, "resolved")
+           or Text.Contains(text, "fixed")
+           or Text.Contains(text, "promptly")
+           or Text.Contains(text, "quickly") ) then 0.5
+
+    else if Text.Contains(text, "issue")
+        or Text.Contains(text, "slow")
+        or Text.Contains(text, "too long")
+        or Text.Contains(text, "wait") then 0.35
+
+    else if Text.Contains(text, "excellent")
+        or Text.Contains(text, "very satisfied")
+        or Text.Contains(text, "very pleased") then 0.95
+
+    else if Text.Contains(text, "great")
+        or Text.Contains(text, "helpful")
+        or Text.Contains(text, "easy")
+        or Text.Contains(text, "happy")
+        or Text.Contains(text, "quick")
+        or Text.Contains(text, "efficient")
+        or Text.Contains(text, "recommend") then 0.85
+
+    else 0.5

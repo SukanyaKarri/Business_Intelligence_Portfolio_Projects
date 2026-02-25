@@ -1,0 +1,28 @@
+import pandas as pd
+
+def sentiment_score(text):
+    text = str(text).lower()
+    if "excellent" in text or "very satisfied" in text:
+        return 0.95
+    elif "great" in text or "helpful" in text:
+        return 0.85
+    elif "good" in text:
+        return 0.65
+    elif "issue" in text or "slow" in text:
+        return 0.35
+    elif "frustrating" in text or "unclear" in text:
+        return 0.2
+    else:
+        return 0.5
+
+dataset["Score Sentiment"] = dataset["Feedback"].apply(sentiment_score)
+
+def label(score):
+    if score >= 0.85:
+        return "Positive"
+    elif score >= 0.5:
+        return "Neutral"
+    else:
+        return "Negative"
+
+dataset["Sentiment"] = dataset["Score Sentiment"].apply(label)
