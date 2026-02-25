@@ -1,13 +1,12 @@
-### Business_Intelligence_Portfolio_Projects
-Report Creation 
-- PowerBI
-- Tableau
-- Looker-Studio
+# Power BI Portfolio (Python & SQL Inclusive)
 
-### General Data Tools Stats:
-- Scripts : Python-
-- Data Manipulation: SQL,Pandas
-- Data Transformation: PowerQuery
-- Data Validation: Excel (pivots)
-- Data Sources: DataFlow, Azure,BigQuery
-- Cloud-Platforms : AWS, Azure
+This repository contains my end-to-end Business Intelligence projects
+built using **Power BI**, **Python**, and **SQL**.
+
+Each project is organized in its own folder with:
+- Power BI (.pbix) files
+- Project-specific README
+- Screenshots and scripts
+
+## Projects
+- BI1 – Insurance Analytics Dashboard
