@@ -1,1 +1,2 @@
-***Check README.md of each file for detailed Project details***
+***Check README.md of each file present within the folder for detailed Project details***
+
